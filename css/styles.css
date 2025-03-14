@@ -1,0 +1,368 @@
+/* Global Styles */
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #DEB887;
+    --text-color: #333;
+    --light-bg: #FFF8DC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    padding-top: 56px;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    word-wrap: break-word;
+}
+
+.navbar {
+    background-color: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.navbar-collapse {
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    padding: 0.5rem !important;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+    background-color: rgba(139, 69, 19, 0.1);
+    border-radius: 4px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/bannerPadaria.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    max-width: 100%;
+}
+
+.hero .lead {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    max-width: 100%;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.contact-info {
+    padding: 1rem;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.contact-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    width: 16px;
+}
+
+form .form-control {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Footer - Mobile First */
+footer {
+    background-color: var(--primary-color) !important;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Tablet Styles */
+@media (min-width: 576px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        width: auto;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1.3rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    footer .text-end {
+        text-align: right !important;
+        margin-top: 0;
+    }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero .lead {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Products Page Styles */
+.page-header {
+    padding-top: 120px;
+    background-color: var(--light-bg);
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-section h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.products-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.products-section .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.products-section .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.products-section .list-unstyled li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.products-section .list-unstyled i {
+    width: 20px;
+}
+
+/* Responsive adjustments for products page */
+@media (max-width: 768px) {
+    .page-header {
+        padding-top: 100px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .products-section .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .category-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .products-section .card-img-top {
+        height: 180px;
+    }
+} 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - BigPão</title>
+    <meta name="description" content="Conheça nossa linha completa de produtos artesanais - BigPão">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BigPão</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="page-header bg-light py-5">
+        <div class="container">
+            <h1 class="text-center">Nossos Produtos</h1>
+            <p class="lead text-center">Descubra o sabor da tradição em cada produto</p>
+        </div>
+    </section>
+
+    <!-- Products Categories -->
+    <section class="products-section py-5">
+        <div class="container">
+            <!-- Pães Artesanais -->
+            <div class="category-section mb-5">
+                <h2 class="mb-4">Pães Artesanais</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="img/paoartesanalpadaria.jpg" class="card-img-top" alt="Pão Artesanal com Café">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Pão Artesanal Tradicional</h3>
+                                <p class="card-text">Nosso clássico pão artesanal, perfeito para qualquer hora do dia. Produzido com farinha selecionada e fermentação natural.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Disponível todos os dias</li>
+                                    <li><i class="fas fa-clock text-info me-2"></i>Melhor consumo: até 3 dias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="img/paocomforno.jpg" class="card-img-top" alt="Pão Rústico">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Pão Rústico Especial</h3>
+                                <p class="card-text">Pão de fermentação lenta com casca crocante e miolo macio. Ideal para harmonizar com queijos e vinhos.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Produção limitada</li>
+                                    <li><i class="fas fa-clock text-info me-2"></i>Sob encomenda</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bolos e Doces -->
+            <div class="category-section mb-5">
+                <h2 class="mb-4">Bolos e Doces</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="img/Bolopadaria.jpg" class="card-img-top" alt="Bolo Festivo">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Bolos Festivos</h3>
+                                <p class="card-text">Bolos especiais para suas comemorações. Personalizamos de acordo com sua preferência e ocasião.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-calendar text-primary me-2"></i>Encomendas com 48h de antecedência</li>
+                                    <li><i class="fas fa-users text-warning me-2"></i>Diversos tamanhos disponíveis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Doces e Sobremesas</h3>
+                                <p class="card-text">Deliciosa variedade de doces tradicionais e sobremesas especiais feitas diariamente.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Produção diária</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Sabores variados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-5">
+                <h3 class="mb-4">Faça sua encomenda</h3>
+                <p class="mb-4">Entre em contato conosco para fazer sua encomenda ou tirar dúvidas sobre nossos produtos</p>
+                <a href="index.html#contato" class="btn btn-primary btn-lg">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 BigPão. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
